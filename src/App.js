@@ -45,11 +45,6 @@ function App() {
       />
       <button onClick={() => getSearchResults(searchQuery)}>Search</button>
       <br />
-      {/* <ul>
-        {companies.map((company, index) => (
-          <li key={index}>{company}</li>
-        ))}
-      </ul> */}
     </div>
   );
 }

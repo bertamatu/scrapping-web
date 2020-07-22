@@ -6,7 +6,7 @@ const BASE_URL = `http://www.lrimones.lt/index.php?imonespaieska=&raktazodis=`;
 function App() {
   const [loading, setLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState("");
-  const [companies, setCompanies] = useState([]);
+  // const [companies, setCompanies] = useState([]);
 
   useEffect(() => {
     getSearchResults();
@@ -20,7 +20,7 @@ function App() {
     const $ = cheerio.load(data);
     $(".contact").map((i, e) => {
       const CompanyInfo = $(e).text();
-      console.log(CompanyInfo);
+      return console.log(CompanyInfo);
     });
     // ---- HOW TO setCompanies ???
   }
